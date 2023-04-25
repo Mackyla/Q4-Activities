@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Excersise 4</title>
+</head>
+<body style="background-color: seagreen;">
+	<br><br><br><br><br><br><center><h1 style="color: black;">US Dollar to Philippine Peso Converter</h1><img src="DOLLAR.png">
+	<br><br>
+	<h3><p> $ - ₱ </p></h3>
+	<form>
+		<h3>Enter US Amount: <br><br><input type="text" id="num1"><br><br>
+		<input type="Submit" value="CALCULATE" onclick="Calculate()"></h3>
+	</form>
+	<script type="text/javascript">
+		function Calculate(){
+			let num1 = document.getElementById('num1').value;
+			let product = num1 * 55.59;
+			alert("Peso (₱) is : " + product);
+		}
+	</script></center>
+</body>
+</html>
