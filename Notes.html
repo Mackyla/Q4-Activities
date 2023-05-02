@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
+<style type="text/css">
+	h1, h2, h3, h4{
+		font-family: Source Sans Pro;
+	}
+	p{
+		font-family: Source Sans Pro;
+	}
+</style>
+	<title>Document</title>
+</head>
+<body class="bg-secondary">
+	<br>
+	<br>
+
+	<div class="container bg-light text-center p-5">
+		<p id= 'date'></p>
+
+	<script type="text/javascript">
+		const DT = new Date();//constant declaration for date object
+		document.getElementById('date').innerHTML = DT;
+	</script>
+		<h1><b>Things to take note!</b></h1><br>
+		<center>
+		<table align="center" boarder="3" boardercolor="black" width="600" cellpadding="4" cellspacing="6">
+			<caption> Take note! </caption>
+			<tr>
+				<td><b>Celsius</b></td>
+				<td><b>Fahrenheit</b></td>
+				<td><b>Description</b></td>
+			</tr>
+			<tr>
+				<td><b>-273.15</b></td>
+				<td><b>-459.67</b></td>
+				<td><b>Absolute zero temperature</b></td>
+			</tr>
+			<tr>
+				<td><b>0</b></td>
+				<td><b>32.0</b></td>
+				<td><b>Freezing/melting point of water</b></td>
+			</tr>
+			<tr>
+				<td><b>21</b></td>
+				<td><b>69.8</b></td>
+				<td><b>Room temperature</b></td>
+			</tr>
+			<tr>
+				<td><b>37</b></td>
+				<td><b>98.6</b></td>
+				<td><b>Average body temperature</b></td>
+			</tr>
+			<tr>
+				<td><b>100</b></td>
+				<td><b>212.0</b></td>
+				<td><b>Boiling point of water</b></td>
+			</tr>
+		</table></center>
+		<a href="Part 2.html">
+		<button class="btn btn-primary">
+			Start!</button>
+		</a>
+	</div>
+</body>
+</html>
