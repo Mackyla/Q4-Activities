@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Roboto&family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
+	<style type="text/css">
+		p{
+			font-family: Roboto;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<center><br><br><br><br><br><br><br><br><br><br><br><br><h1><b><i>HELLO! WELCOME TO "THE OHM'S LAW" WEBPAGE! JUST KEEP SCROLLING TO FIND MORE INFORMATION!</i></b></h1><br>
+	<h6><i>Lets hope you understand cause I barely understand anything about the topic... <3 </h6></i></center>
+	<center><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><p>-----------------------------</p><br><p><i><b>" Your almost there! "</b></i></p><br><p>-----------------------------</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><p>-----------------------------</p><br><p><i><b>" A bit more... "</b></i></p><br><p>-----------------------------</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><p><i><b>" Huh, you made it without stopping... congrats! "</b></i></p><br><br><h2>The Ohm's Law</h2>
+	<p>Ohm's Law is a formula used to calculate the relationship between voltage, current and resistance in an electrical circuit. To students of electronics, Ohm's Law (E = IR) is as fundamentally important as Einstein's Relativity equation (E = mc²) is to physicists.</p>
+	<img src="fig1.png"><br><br>
+	<p>Ohm’s Law is a very simple and useful tool for analyzing electric circuits. It is used so often in the study of electricity and electronics that it needs to be committed to memory by the serious student. For those who are not yet comfortable with algebra, there’s a trick to remembering how to solve for any one quantity, given the other two.
+
+	First, arrange the letters E, I, and R in a triangle like this:</p>
+	<img src="fig2.png"><br><br>
+	<p>In this first example, we will calculate the amount of current (I) in a circuit, given values of voltage (E) and resistance (R):</p>
+
+	<div class="row">
+		<div class="col-6 mt-5">
+			<b>Enter Voltage(E):</b> <input type="text" id="V" class="form-control"><br>
+			<b>Enter Resistance (R):</b> <input type="text" id="R" class="form-control"><br>
+			<input type="Submit" value="COMPUTE" class="btn btn-secondary" onclick="Calculate()">
+			<p id="OUTPUT"></p>
+		</div>
+		<div class="col-6">
+			<img src="fig3.png" id='fig3'><br><br>
+		</div>
+	</div>
+	<audio id="audio" src="turnonlights.mp3"></audio>
+	<h2>What makes a light bulb light up?</h2>
+	<p>The typical incandescent light bulb contains a thin wire (usually tungsten) called a filament that has a high electrical resistance. This filament gets very hot when an electric current passes through it. The intense temperature makes the filament glow brightly.</p>
+	<button class="btn btn-success" onmouseover="On()" onmouseout="Off()">TURN ON LIGHT</button>
+	<img src="turnoff.png" id="bulb" width="150">
+
+
+	<script type="text/javascript">
+		function Calculate(){
+			let V = document.getElementById('V').value;
+			let R = document.getElementById('R').value;
+			let Current = V/R;
+			document.getElementById('OUTPUT').innerHTML = "The computed Current(I) is :" + Current;
+		}
+		function On(){
+			document.getElementById('bulb').src ="turnon.png";
+			document.getElementById('audio').play();
+		}
+		function Off(){
+			document.getElementById('bulb').src ="turnoff.png";
+			document.getElementById('audio').pause();
+		}
+	</script>
+
+	<br><br><b>Sources: </b><br>
+	<a href="https://www.fluke.com/en-ph/learn/blog/electrical/what-is-ohms-law#:~:text=Ohm's%20Law%20is%20a%20formula,%3D%20mc%C2%B2)%20is%20to%20physicists."> What is Ohm's Law? </a><br>
+	<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/">Ohm's Law - How Voltage, Current, and Resistance Relate</a><br><br><br>
+
+	<br><br><br><p>-----------------------------</p><br><p><i><b>" Well uhh.. Thats it! Ok you can go now! Nothing to see here at the end! Bye bye! "</b></i></p><br><p>-----------------------------</p></b></p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><p>-----------------------------</p><br><p><i><b>" I told you :p <3 "</p></b></i><br><p>-----------------------------</p></center>
+
+</div>
+</body>
+</html>
